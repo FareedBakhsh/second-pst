@@ -1,0 +1,35 @@
+/* Flexbox centering for navbar items */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 240px;
+  padding-right: 240px;
+  gap: 50px;
+  width: 100%;
+}
+  
+.navbar-nav .logo {
+  flex: 1;
+  text-align: center;
+}
+
+.navbar-nav .pi {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Hide the logo on small screens to avoid overlap */
+@media (max-width: 991.98px) {
+  .navbar-nav .logo {
+    display: none;
+  }
+}
+
+/* Center toggle button */
+.navbar-toggler {
+  margin-left: auto;
+  margin-right: auto;
+}
